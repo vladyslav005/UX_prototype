@@ -1,0 +1,11 @@
+
+#editor {
+    overflow: hidden;
+    position: relative;
+}
+
+.build-tree-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}

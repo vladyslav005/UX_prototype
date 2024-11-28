@@ -1,0 +1,51 @@
+.button {
+    cursor: pointer;
+    border-radius: 100px;
+
+    padding: 0.4rem 1rem;
+    background: var(--Schemes-Primary, #65558F);
+
+    color: var(--M3-sys-light-on-primary, var(--Schemes-On-Primary, #FFF));
+    text-align: center;
+
+
+    transition: background 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    /* M3/label/large */
+    font-family: var(--Label-Large-Font, Roboto);
+    font-size: var(--Label-Large-Size, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Label-Large-Line-Height, 20px); /* 142.857% */
+    letter-spacing: var(--Label-Large-Tracking, 0.1px);
+}
+
+.button:hover {
+    border-radius: 100px;
+    background: var(--Schemes-Primary, rgba(101, 85, 143, 0.88));
+
+    /* M3/Elevation Light/1 */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    /* M3/label/large */
+    font-family: var(--Label-Large-Font, Roboto);
+    font-size: var(--Label-Large-Size, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Label-Large-Line-Height, 20px); /* 142.857% */
+    letter-spacing: var(--Label-Large-Tracking, 0.1px);
+}
+
+button:focus {
+    border-radius: 100px;
+    background: var(--Schemes-Primary, rgba(101, 85, 143, 0.82));
+    color: var(--M3-sys-light-on-primary, var(--Schemes-On-Primary, #FFF));
+    text-align: center;
+
+    /* M3/label/large */
+    font-family: var(--Label-Large-Font, Roboto);
+    font-size: var(--Label-Large-Size, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Label-Large-Line-Height, 20px); /* 142.857% */
+    letter-spacing: var(--Label-Large-Tracking, 0.1px);
+
+}
