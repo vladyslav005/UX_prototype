@@ -1,0 +1,8 @@
+#error-output {
+    overflow-y: hidden;
+}
+
+.errors {
+    overflow-y: auto;
+    /*padding-right: 20px;*/
+}
