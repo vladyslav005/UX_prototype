@@ -6,14 +6,15 @@ import {log} from "node:util";
 interface TabContentProps {
   children?: React.ReactNode
   label: string
+  className?: string
 }
 
-export const TabContent = ({children, label}: TabContentProps) => {
-  const {activeTabLabel, setActiveTabLabel} = useContext(TabsContext)
+export const TabContent = ({children, label, className}: TabContentProps) => {
+  const {activeTabLabel} = useContext(TabsContext)
 
 
   return (
-      <div className={"tab-content " + (label === activeTabLabel ? "tab-content-active" : "")}>
+      <div className={"tab-content " + className + ' ' + (label === activeTabLabel ? "tab-content-active" : "")}>
 
         {children}
 

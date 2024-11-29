@@ -5,7 +5,8 @@
 }
 
 .build-tree-btn {
-    position: absolute;
+    position: absolute !important;
     bottom: 1rem;
     right: 1rem;
+    padding: 0.6rem 2rem !important;
 }

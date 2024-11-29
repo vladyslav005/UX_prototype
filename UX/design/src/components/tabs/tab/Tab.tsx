@@ -4,8 +4,9 @@ import {TabsContext} from "../TabsContext";
 import Ripples, {createRipples} from 'react-ripples'
 
 export interface TabProps {
-  label: string
-  defaultActive?: boolean
+  label: string,
+  defaultActive?: boolean,
+  onClick?: () => void
 }
 
 export const MyRipples = createRipples({
@@ -14,7 +15,7 @@ export const MyRipples = createRipples({
 
 })
 
-export const Tab = ({label, defaultActive}: TabProps) => {
+export const Tab = ({label, defaultActive, onClick}: TabProps) => {
   const {activeTabLabel, setActiveTabLabel} = useContext(TabsContext)
 
   useEffect(() => {
@@ -25,6 +26,7 @@ export const Tab = ({label, defaultActive}: TabProps) => {
 
   const handleClick = () => {
     setActiveTabLabel(label)
+    onClick && onClick()
   }
 
   return (

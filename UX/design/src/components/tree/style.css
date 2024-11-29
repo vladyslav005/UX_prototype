@@ -1,0 +1,85 @@
+#tree {
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+
+#download {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+
+
+#download img {
+    width: 32px;
+    height: 32px;
+}
+
+.dropdown {
+    z-index: 3;
+    position: absolute;
+    width: 200px;
+    top: -120px;
+    right: 0px;
+    border-radius: 4px;
+    background: var(--Schemes-Surface-Container, #F3EDF7);
+
+    /* M3/Elevation Light/2 */
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+
+    color: var(--M3-sys-light-on-surface, var(--Schemes-On-Surface, #1D1B20));
+    /* M3/body/large */
+    font-family: var(--Body-Large-Font, Roboto);
+    font-size: var(--Body-Large-Size, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Body-Large-Line-Height, 24px); /* 150% */
+    letter-spacing: var(--Body-Large-Tracking, 0.5px);
+}
+
+.dropdown li {
+    padding: 1rem 1rem ;
+}
+
+.dropdown li:hover {
+    background: var(--Schemes-Secondary-Container, #E8DEF8);
+    color: var(--M3-sys-light-on-secondary-container, var(--Schemes-On-Secondary-Container, #4A4459));
+
+    /* M3/body/large */
+    font-family: var(--Body-Large-Font, Roboto);
+    font-size: var(--Body-Large-Size, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Body-Large-Line-Height, 24px); /* 150% */
+    letter-spacing: var(--Body-Large-Tracking, 0.5px);
+    padding: 1rem 1rem ;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.dropdown-state-layer {
+    position: absolute;
+    display: block;
+    background-color: rgba(133, 34, 33, 0);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.tree-tooltip {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.download-btn {
+    padding: 1rem 1rem ;
+}

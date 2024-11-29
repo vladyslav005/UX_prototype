@@ -1,0 +1,54 @@
+.card {
+    border-radius: 12px;
+    border: 1px solid var(--Schemes-Outline-Variant, #CAC4D0);
+    background: var(--Schemes-Surface, #FEF7FF);
+
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+
+.card-title {
+    padding: 1rem 1rem 0.5rem 1rem;
+
+    color: var(--M3-sys-light-on-surface, var(--Schemes-On-Surface, #1D1B20));
+    /* M3/title/medium */
+    font-family: var(--Title-Medium-Font, Roboto);
+    font-size: var(--Title-Medium-Size, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Title-Medium-Line-Height, 24px); /* 150% */
+    letter-spacing: var(--Title-Medium-Tracking, 0.15px);
+}
+
+.card-subtitle {
+    padding: 0rem 1rem 1rem 1rem;
+
+    color: var(--M3-sys-light-on-surface, var(--Schemes-On-Surface, #1D1B20));
+    /* M3/body/medium */
+    font-family: var(--Body-Medium-Font, Roboto);
+    font-size: var(--Body-Medium-Size, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Body-Medium-Line-Height, 20px); /* 142.857% */
+    letter-spacing: var(--Body-Medium-Tracking, 0.25px);
+}
+
+.card-content {
+    color: var(--M3-sys-light-on-surface-variant, var(--Schemes-On-Surface-Variant, #49454F));
+    padding: 0rem 1rem 1rem 1rem;
+
+    max-width: 700px;
+    overflow: hidden;
+    text-after-overflow: ellipsis;
+    text-wrap: wrap;
+    white-space: wrap;
+
+    /* M3/body/medium */
+    font-family: var(--Body-Medium-Font, Roboto);
+    font-size: var(--Body-Medium-Size, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Body-Medium-Line-Height, 20px); /* 142.857% */
+    letter-spacing: var(--Body-Medium-Tracking, 0.25px);
+}

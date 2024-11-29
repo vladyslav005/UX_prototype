@@ -1,0 +1,39 @@
+.search input {
+    color: var(--M3-sys-light-on-surface-variant, var(--Schemes-On-Surface-Variant, #49454F));
+    /* M3/body/large */
+    font-family: var(--Body-Large-Font, Roboto);
+    font-size: var(--Body-Large-Size, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Body-Large-Line-Height, 24px); /* 150% */
+    letter-spacing: var(--Body-Large-Tracking, 0.5px);
+    border-radius: 28px;
+    background: var(--Schemes-Surface-Container-High, #ECE6F0);
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.search input:focus {
+    color: var(--M3-sys-light-on-surface-variant, var(--Schemes-On-Surface-Variant, #49454F));
+    border: none !important;
+    outline: none !important;
+    background: var(--State-Layers-On-Surface-Opacity-08, rgba(29, 27, 32, 0.08));
+}
+
+.search {
+    position: relative;
+}
+
+.search:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-image: url("../../assets/icons/lense.png");
+    top: 0.7rem;
+    right: 1rem;
+    background-size: cover; /* Scales the image to cover the entire area */
+    background-position: center; /* Ensures the image is centered */
+    background-repeat: no-repeat;
+}

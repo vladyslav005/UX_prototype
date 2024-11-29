@@ -17,6 +17,7 @@ html {
     padding: 0;
     margin: 0;
     background: var(--Schemes-Surface, #FEF7FF);
+    overflow: hidden;
 }
 
 
@@ -25,4 +26,20 @@ section {
     /*flex-grow: 0;*/
     border-radius: var(--Corner-Medium, 12px);
     background: var(--Schemes-Surface-Container, #F3EDF7);
+}
+
+
+
+*::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--Grays-Gray-2, #AEAEB2);
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
 }

@@ -49,3 +49,7 @@ button:focus {
     letter-spacing: var(--Label-Large-Tracking, 0.1px);
 
 }
+
+.button img {
+    height: 24px;
+}

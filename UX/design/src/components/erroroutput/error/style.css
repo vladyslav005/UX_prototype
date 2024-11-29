@@ -26,9 +26,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    height: 20px;
-
-
 }
 
 .error-container .error-text-expanded {
@@ -36,9 +33,6 @@
     text-overflow: ellipsis;
     white-space: wrap;
     height: min-content;
-    /* M3/body/medium */
-
-
 }
 
 .error-title {
