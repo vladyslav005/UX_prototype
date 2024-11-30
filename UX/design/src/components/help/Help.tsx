@@ -34,15 +34,18 @@ export const Help = () => {
         </div>
 
         <Modal isOpen={isModelOpened} onClose={handleCloseModal}>
-            <Card>
-              <CardTitle title={"Topic"}/>
-              <CardSubtitle subtitle={"Subtitle"}/>
-              <CardImage src={img} alt={"Related image"}/>
-              <CardTitle title={"Title"}/>
-              <CardContent>
-                altera appareat expetenda quam nam veniam conclusionemque scripta convenire natoque sea delicata platonem partiendo discere utamur integer delectus epicuri ac no eu aliquet porta hinc veritus dictum instructior mediocrem evertitur veritus quidam persius sale autem definiebas percipit cetero mattis volumus accommodare dictumst recteque eloquentiam ac
-              </CardContent>
-            </Card>
+          <Card>
+            <CardTitle title={"Topic"}/>
+            <CardSubtitle subtitle={"Subtitle"}/>
+            <CardImage src={img} alt={"Related image"}/>
+            <CardTitle title={"Title"}/>
+            <CardContent>
+              altera appareat expetenda quam nam veniam conclusionemque scripta convenire natoque sea delicata platonem
+              partiendo discere utamur integer delectus epicuri ac no eu aliquet porta hinc veritus dictum instructior
+              mediocrem evertitur veritus quidam persius sale autem definiebas percipit cetero mattis volumus
+              accommodare dictumst recteque eloquentiam ac
+            </CardContent>
+          </Card>
         </Modal>
       </section>
   )

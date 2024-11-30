@@ -24,6 +24,14 @@
     height: 2rem;
     border-radius: 200px;
     overflow: hidden;
+    cursor: pointer;
+
+    transition: background-color .2s ease-in-out;
+}
+
+.close-button:hover {
+    background-color: var(--State-Layers-On-Surface-Opacity-08, rgba(29, 27, 32, 0.13));
+
 }
 
 .close-button img {

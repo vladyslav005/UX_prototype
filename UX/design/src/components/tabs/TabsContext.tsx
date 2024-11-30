@@ -9,7 +9,8 @@ interface TabsContextType {
 
 export const TabsContext = createContext<TabsContextType>({
   activeTabLabel: "",
-  setActiveTabLabel: (label: string) => {}
+  setActiveTabLabel: (label: string) => {
+  }
 })
 
 interface TabsContextProviderProps {

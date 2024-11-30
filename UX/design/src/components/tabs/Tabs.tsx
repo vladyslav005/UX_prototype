@@ -1,6 +1,6 @@
 import './style.css'
-import {TabsContext, TabsContextProvider} from "./TabsContext";
-import React, {useEffect} from "react";
+import {TabsContextProvider} from "./TabsContext";
+import React from "react";
 import {Tab} from "./tab/Tab";
 import {TabContent} from "./tabcontent/TabContent";
 
@@ -9,7 +9,7 @@ interface TabsProps {
   children?: React.ReactNode[]
 }
 
-export const Tabs = ({children} : TabsProps) => {
+export const Tabs = ({children}: TabsProps) => {
   const childrenArray = React.Children.toArray(children);
 
   return (

@@ -9,16 +9,18 @@ import {Button} from "../button/Button";
 import {useContext} from "react";
 import {CommonContext} from "../../CommonContext";
 
-export const Editor= () => {
+export const Editor = () => {
   const commonContext = useContext(CommonContext);
 
   return (
       <section id={"editor"}>
-          <img style={{
-            width:'100%',
-          }} src={commonContext.interactiveEditor ? editorInteractiveImg : editorBasicImg} alt=""/>
+        <img style={{
+          width: '100%',
+        }} src={commonContext.interactiveEditor ? editorInteractiveImg : editorBasicImg} alt=""/>
 
-        <Button className="build-tree-btn" onClick={() => {commonContext.setIsTreeBuilt(true)}}>
+        <Button className="build-tree-btn" onClick={() => {
+          commonContext.setIsTreeBuilt(true)
+        }}>
           Build tree
         </Button>
 

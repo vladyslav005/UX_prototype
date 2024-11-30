@@ -5,13 +5,11 @@
 }
 
 
-
 #download {
     position: absolute;
     bottom: 2rem;
     right: 2rem;
 }
-
 
 
 #download img {
@@ -42,7 +40,7 @@
 }
 
 .dropdown li {
-    padding: 1rem 1rem ;
+    padding: 1rem 1rem;
 }
 
 .dropdown li:hover {
@@ -56,7 +54,7 @@
     font-weight: 400;
     line-height: var(--Body-Large-Line-Height, 24px); /* 150% */
     letter-spacing: var(--Body-Large-Tracking, 0.5px);
-    padding: 1rem 1rem ;
+    padding: 1rem 1rem;
 }
 
 .hidden {
@@ -81,5 +79,5 @@
 }
 
 .download-btn {
-    padding: 1rem 1rem ;
+    padding: 1rem 1rem;
 }

@@ -8,7 +8,7 @@ interface ListItemProps {
 }
 
 
-export const ListItem = (props : ListItemProps) => {
+export const ListItem = (props: ListItemProps) => {
 
   return (
       <div className="list-item-container" onClick={props.onClick}>

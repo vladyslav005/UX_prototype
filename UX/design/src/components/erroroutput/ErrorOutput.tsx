@@ -2,10 +2,10 @@ import {Error} from "./error/Error";
 import './style.css'
 
 interface ErrorOutputProps {
-  className? : string,
+  className?: string,
 }
 
-export const ErrorOutput = ({className}: ErrorOutputProps ) => {
+export const ErrorOutput = ({className}: ErrorOutputProps) => {
 
   return (
       <section id="error-output" className={"flex justify-center " + className}>

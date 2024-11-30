@@ -8,7 +8,7 @@ interface CardImageProps {
 export const CardImage = ({src, alt}: CardImageProps) => {
   return (
       <div className={"card-image"}>
-        <img src={src} alt={alt} />
+        <img src={src} alt={alt}/>
       </div>
   )
 }

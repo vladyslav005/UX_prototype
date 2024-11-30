@@ -16,11 +16,13 @@ interface CommonContextType {
 export const CommonContext = React.createContext<CommonContextType>({
   interactiveEditor: false,
 
-  setInteractiveEditor: (newInteractiveEditor: boolean) => {},
+  setInteractiveEditor: (newInteractiveEditor: boolean) => {
+  },
 
   isTreeBuilt: false,
 
-  setIsTreeBuilt: (isTreeBuiltin: boolean) => {}
+  setIsTreeBuilt: (isTreeBuiltin: boolean) => {
+  }
 
 });
 
@@ -34,10 +36,9 @@ export const CommonContextProvider = ({children}: CommonContextProps) => {
   const [isTreeBuilt, setIsTreeBuilt] = useState(false)
 
 
-
   return (
-    <CommonContext.Provider value={{interactiveEditor, setInteractiveEditor, isTreeBuilt, setIsTreeBuilt}}>
-      {children}
-    </CommonContext.Provider>
+      <CommonContext.Provider value={{interactiveEditor, setInteractiveEditor, isTreeBuilt, setIsTreeBuilt}}>
+        {children}
+      </CommonContext.Provider>
   )
 };

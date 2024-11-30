@@ -1,7 +1,6 @@
 import './style.css'
 import {useContext} from "react";
 import {TabsContext} from "../TabsContext";
-import {log} from "node:util";
 
 interface TabContentProps {
   children?: React.ReactNode

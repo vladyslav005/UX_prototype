@@ -1,14 +1,9 @@
 import React from 'react';
 import './App.css';
-import {Tabs} from "./components/tabs/Tabs";
-import {Tab} from "./components/tabs/tab/Tab";
-import {TabContent} from "./components/tabs/tabcontent/TabContent";
 import {Editor} from "./components/editor/Editor";
 import {Tree} from "./components/tree/Tree";
 import {ErrorOutput} from "./components/erroroutput/ErrorOutput";
 import {Help} from "./components/help/Help";
-import './App.css'
-import {ToolTip} from "./components/tooltip/ToolTip";
 
 
 function App() {

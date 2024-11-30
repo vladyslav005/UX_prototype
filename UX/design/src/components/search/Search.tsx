@@ -6,6 +6,5 @@ export const Search = () => {
       <div className="search">
         <input type="text" placeholder="Search..."/>
       </div>
-
   )
 }

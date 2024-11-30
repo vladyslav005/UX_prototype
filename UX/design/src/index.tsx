@@ -8,14 +8,14 @@ import {CommonContextProvider} from "./CommonContext";
 // TODO : define css variables
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+    document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <CommonContextProvider>
-      <App />
-    </CommonContextProvider>
-  </React.StrictMode>
+    <React.StrictMode>
+      <CommonContextProvider>
+        <App/>
+      </CommonContextProvider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

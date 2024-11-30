@@ -72,30 +72,34 @@ export const Tree = () => {
     });
   }, [])
 
-  const handleMouseDown = (event: MouseEvent) => {
+  const handleMouseDown = () => {
     document.querySelectorAll<HTMLImageElement>(".tree-img").forEach(img => {
       img.style.cursor = "grabbing";
     });
   }
 
-  const handleMouseUp = (event: MouseEvent) => {
+  const handleMouseUp = () => {
     document.querySelectorAll<HTMLImageElement>(".tree-img").forEach(img => {
       img.style.cursor = "grab";
     });
   }
 
   return (
-    <>
-      <section id="tree">
-        <Tabs>
-          <Tab label="Interactive tree" onClick={() => {commonContext.setInteractiveEditor(true)}}/>
-          <Tab label="Tree with LaTex" onClick={() => {commonContext.setInteractiveEditor(false)}} defaultActive/>
+      <>
+        <section id="tree">
+          <Tabs>
+            <Tab label="Interactive tree" onClick={() => {
+              commonContext.setInteractiveEditor(true)
+            }}/>
+            <Tab label="Tree with LaTex" onClick={() => {
+              commonContext.setInteractiveEditor(false)
+            }} defaultActive/>
 
 
             <TabContent label={"Interactive tree"} className={commonContext.isTreeBuilt ? "" : "hidden"}>
-            <MapInteractionCSS>
-              <img src={interactiveTree} className={'tree-img'} alt={'Interactive tree'}/>
-            </MapInteractionCSS>
+              <MapInteractionCSS>
+                <img src={interactiveTree} className={'tree-img'} alt={'Interactive tree'}/>
+              </MapInteractionCSS>
             </TabContent>
 
             <TabContent label={"Tree with LaTex"} className={commonContext.isTreeBuilt ? "" : "hidden"}>
@@ -103,87 +107,98 @@ export const Tree = () => {
                 <img src={texTree} className={'tree-img'} alt={'Tree with Tex'}/>
               </MapInteractionCSS>
             </TabContent>
-        </Tabs>
+          </Tabs>
 
-        <div id="download" className={commonContext.isTreeBuilt ? "" : "hidden"}>
-          <Button onClick={toggleDropdown} className="download-btn">
-            <img src={downloadIcon}/>
-          </Button>
-          <div className={"dropdown " + (isDropdownOpen ? "" : "hidden")}>
-            <ul>
-              <li onClick={() => {openPngModal(); toggleDropdown()}}>Export as PNG</li>
-              <li onClick={() => {openTextModal(); toggleDropdown()}}>Export as LaTex</li>
-            </ul>
-          </div>
-        </div>
-
-      </section>
-      <div className={"dropdown-state-layer " + (isDropdownOpen ? "" : "hidden")} onClick={toggleDropdown}></div>
-
-      <Modal isOpen={showPngModal} onClose={closePngModal}>
-        <Card>
-          <CardTitle title={"Preview"}/>
-          <CardSubtitle subtitle={"Image preview"}/>
-          <CardImage src={pngPreviewImg} alt={"Related image"}/>
-          <CardTitle title={"Title"}/>
-          <CardContent>
-            altera appareat expetenda quam nam veniam conclusionemque scripta convenire natoque sea delicata platonem
-            partiendo discere utamur integer delectus epicuri ac no eu aliquet porta hinc veritus dictum instructior
-            mediocrem evertitur veritus quidam persius sale autem definiebas percipit cetero mattis volumus accommodare
-            dictumst recteque eloquentiam ac
-          </CardContent>
-
-          <div className="flex justify-end px-10">
-            <Button
-                onClick={() => {
-                  setShowDownloadToolTip(true)
-                  setHideDownloadToolTip(false)
-                  setTimeout(() => setShowDownloadToolTip(false), 2000);
-                  setTimeout(() => setHideDownloadToolTip(true), 3000);
-                }}
-            >
-              <p>Download</p>
-              <img src={downloadIcon}/>
+          <div id="download" className={commonContext.isTreeBuilt ? "" : "hidden"}>
+            <Button onClick={toggleDropdown} className="download-btn">
+              <img src={downloadIcon} alt=""/>
             </Button>
+            <div className={"dropdown " + (isDropdownOpen ? "" : "hidden")}>
+              <ul>
+                <li onClick={() => {
+                  openPngModal();
+                  toggleDropdown()
+                }}>Export as PNG
+                </li>
+                <li onClick={() => {
+                  openTextModal();
+                  toggleDropdown()
+                }}>Export as LaTex
+                </li>
+              </ul>
+            </div>
           </div>
-        </Card>
-      </Modal>
 
-      <Modal isOpen={showTexModal} onClose={closeTextModal}>
-        <Card>
-          <CardTitle title={"Preview"}/>
-          <CardSubtitle subtitle={"Latex code preview"}/>
-          <CardImage src={texPreviewImg} alt={"Related image"}/>
-          <CardTitle title={"Title"}/>
-          <CardContent>
-            altera appareat expetenda quam nam veniam conclusionemque scripta convenire natoque sea delicata platonem
-            partiendo discere utamur integer delectus epicuri ac no eu aliquet porta hinc veritus dictum instructior
-            mediocrem evertitur veritus quidam persius sale autem definiebas percipit cetero mattis volumus accommodare
-            dictumst recteque eloquentiam ac
-          </CardContent>
+        </section>
+        <div className={"dropdown-state-layer " + (isDropdownOpen ? "" : "hidden")} onClick={toggleDropdown}></div>
 
-          <div className="flex justify-end px-10">
-            <Button
-                onClick={() => {
-                  setShowCopyToolTip(true)
-                  setHideCopyToolTip(false)
-                  setTimeout(() => setShowCopyToolTip(false), 2000);
-                  setTimeout(() => setHideCopyToolTip(true), 3000);
-                }}
-            >
-              <p>Copy to clipboard</p>
-              <img src={copyIcon}/>
-            </Button>
-          </div>
-        </Card>
-      </Modal>
+        <Modal isOpen={showPngModal} onClose={closePngModal}>
+          <Card>
+            <CardTitle title={"Preview"}/>
+            <CardSubtitle subtitle={"Image preview"}/>
+            <CardImage src={pngPreviewImg} alt={"Related image"}/>
+            <CardTitle title={"Title"}/>
+            <CardContent>
+              altera appareat expetenda quam nam veniam conclusionemque scripta convenire natoque sea delicata platonem
+              partiendo discere utamur integer delectus epicuri ac no eu aliquet porta hinc veritus dictum instructior
+              mediocrem evertitur veritus quidam persius sale autem definiebas percipit cetero mattis volumus
+              accommodare
+              dictumst recteque eloquentiam ac
+            </CardContent>
+
+            <div className="flex justify-end px-10">
+              <Button
+                  onClick={() => {
+                    setShowDownloadToolTip(true)
+                    setHideDownloadToolTip(false)
+                    setTimeout(() => setShowDownloadToolTip(false), 2000);
+                    setTimeout(() => setHideDownloadToolTip(true), 3000);
+                  }}
+              >
+                <p>Download</p>
+                <img src={downloadIcon} alt=""/>
+              </Button>
+            </div>
+          </Card>
+        </Modal>
+
+        <Modal isOpen={showTexModal} onClose={closeTextModal}>
+          <Card>
+            <CardTitle title={"Preview"}/>
+            <CardSubtitle subtitle={"Latex code preview"}/>
+            <CardImage src={texPreviewImg} alt={"Related image"}/>
+            <CardTitle title={"Title"}/>
+            <CardContent>
+              altera appareat expetenda quam nam veniam conclusionemque scripta convenire natoque sea delicata platonem
+              partiendo discere utamur integer delectus epicuri ac no eu aliquet porta hinc veritus dictum instructior
+              mediocrem evertitur veritus quidam persius sale autem definiebas percipit cetero mattis volumus
+              accommodare
+              dictumst recteque eloquentiam ac
+            </CardContent>
+
+            <div className="flex justify-end px-10">
+              <Button
+                  onClick={() => {
+                    setShowCopyToolTip(true)
+                    setHideCopyToolTip(false)
+                    setTimeout(() => setShowCopyToolTip(false), 2000);
+                    setTimeout(() => setHideCopyToolTip(true), 3000);
+                  }}
+              >
+                <p>Copy to clipboard</p>
+                <img src={copyIcon} alt=""/>
+              </Button>
+            </div>
+          </Card>
+        </Modal>
 
 
-      <ToolTip text={"File has been downloaded"}
-               className={"tree-tooltip " + (hideDownloadToolTip ? "hidden" : "")} show={showDownloadToolTip}></ToolTip>
-      <ToolTip text={"Code has been copied"}
-               className={"tree-tooltip " + (hideCopyToolTip ? "hidden" : "")} show={showCopyToolTip}></ToolTip>
+        <ToolTip text={"File has been downloaded"}
+                 className={"tree-tooltip " + (hideDownloadToolTip ? "hidden" : "")}
+                 show={showDownloadToolTip}></ToolTip>
+        <ToolTip text={"Code has been copied"}
+                 className={"tree-tooltip " + (hideCopyToolTip ? "hidden" : "")} show={showCopyToolTip}></ToolTip>
 
-    </>
+      </>
   )
 }

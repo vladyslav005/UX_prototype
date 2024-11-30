@@ -53,3 +53,8 @@ button:focus {
 .button img {
     height: 24px;
 }
+
+.button p, span {
+    line-height: var(--Label-Large-Line-Height, 26px) !important;
+
+}

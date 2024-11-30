@@ -3,6 +3,8 @@
     padding: 1rem 2rem;
     min-width: 300px;
 
+
+    z-index: 1000;
     border-radius: 4px;
     background: var(--Schemes-Inverse-Surface, #322F35);
 

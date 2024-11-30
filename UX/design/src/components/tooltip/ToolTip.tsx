@@ -9,10 +9,10 @@ interface ToolTipProps {
 export const ToolTip = ({text, className, show}: ToolTipProps) => {
 
   return (
-    <>
-      <div className={"tooltip " + (show ? "appear" : "dissolve") + " " +className}>
-        <p>{text}</p>
-      </div>
-    </>
+      <>
+        <div className={"tooltip " + (show ? "appear" : "dissolve") + " " + className}>
+          <p>{text}</p>
+        </div>
+      </>
   )
 }

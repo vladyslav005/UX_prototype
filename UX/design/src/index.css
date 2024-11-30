@@ -17,8 +17,9 @@ html {
     padding: 0;
     margin: 0;
     background: var(--Schemes-Surface, #FEF7FF);
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
+
 
 
 section {
@@ -29,17 +30,28 @@ section {
 }
 
 
-
 *::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 12px; /* width of the entire scrollbar */
 }
 
 *::-webkit-scrollbar-track {
-    background: transparent;        /* color of the tracking area */
+    background: transparent; /* color of the tracking area */
 }
 
 *::-webkit-scrollbar-thumb {
     background: var(--Grays-Gray-2, #AEAEB2);
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+::selection {
+    /*color: red;*/
+    background: var(--State-Layers-On-Surface-Opacity-08, rgba(29, 27, 32, 0.08));;
+}
+
+@media only screen and (max-width: 760px) {
+    html {
+        overflow: auto;
+    }
+
 }
