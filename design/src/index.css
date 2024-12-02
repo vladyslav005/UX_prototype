@@ -1,9 +1,53 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
 
+:root {
+    /* 1. Color Variables (Schemes and Surface) */
+    --Schemes-Primary: #65558F;
+    --Schemes-On-Primary: #FFF;
+    --Schemes-Outline-Variant: #CAC4D0;
+    --Schemes-Surface: #FEF7FF;
+    --Schemes-On-Surface: #1D1B20;
+    --Schemes-On-Surface-Variant: #49454F;
+    --Schemes-Error-Container: #F9DEDC;
+    --Schemes-On-Error-Container: #852221;
+    --Schemes-Surface-Variant: #E7E0EC;
+    --Schemes-Surface-Container-High: #ECE6F0;
+    --Schemes-Inverse-Surface: #322F35;
+    --Schemes-Inverse-On-Surface: #F5EFF7;
+    --Schemes-Surface-Container: #F3EDF7;
+    --Schemes-Secondary-Container: #E8DEF8;
+    --Schemes-On-Secondary-Container: #4A4459;
+
+    --Label-Large-Font: Roboto;
+    --Label-Large-Size: 14px;
+    --Label-Large-Line-Height: 20px;
+    --Label-Large-Tracking: 0.1px;
+    --Title-Medium-Font: Roboto;
+    --Title-Medium-Size: 18px;
+    --Title-Medium-Line-Height: 24px;
+    --Title-Medium-Tracking: 0.15px;
+    --Body-Medium-Font: Roboto;
+    --Body-Medium-Size: 14px;
+    --Body-Medium-Line-Height: 20px;
+    --Body-Medium-Tracking: 0.25px;
+    --Body-Large-Font: Roboto;
+    --Body-Large-Size: 16px;
+    --Body-Large-Line-Height: 24px;
+    --Body-Large-Tracking: 0.5px;
+
+    --Corner-Extra-small: 4px;
+    --Corner-Medium: 12px;
+
+    --State-Layers-On-Surface-Opacity-08: rgba(29, 27, 32, 0.13);
+
+    --M3-sys-light-on-primary: var(--Schemes-On-Primary, #FFF);
+    --M3-sys-light-on-surface: var(--Schemes-On-Surface, #1D1B20);
+    --M3-sys-light-on-surface-variant: var(--Schemes-On-Surface-Variant, #49454F);
+    --M3-sys-light-inverse-on-surface: #F5EFF7;
+    --M3-sys-light-on-secondary-container: #4A4459;
+}
 
 body {
 
@@ -39,8 +83,7 @@ section {
 }
 
 *::-webkit-scrollbar-thumb {
-    background: var(--Grays-Gray-2, #AEAEB2);
-    border-radius: 20px; /* roundness of the scroll thumb */
+    background:  #AEAEB2;
     border-radius: 20px; /* roundness of the scroll thumb */
 }
 
