@@ -18,7 +18,7 @@ export const Modal = (props: ModalProps) => {
   return (
       <Transition in={props.isOpen} timeout={300} unmountOnExit>
         {(state: TransitionStatus) =>
-            (<div className={"modal-state-layer"} onClick={props.onClose}>
+            (<div role="dialog" aria-modal="true" className={"modal-state-layer"} onClick={props.onClose}>
               <div className={"modal " + state + " " + props.className} onClick={(e) => {
                 e.stopPropagation();
               }}>

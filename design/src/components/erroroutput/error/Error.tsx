@@ -27,7 +27,7 @@ export const Error = () => {
             adipiscing enim ludus dicam nobis mediocritatem hinc
           </p>
         </div>
-        <img src={arrowRightIcon} className={expand ? "rotated" : ""} alt="arrow-right"/>
+          <img src={arrowRightIcon} className={expand ? "rotated" : ""} alt="arrow-right"/>
       </div>
   )
 }

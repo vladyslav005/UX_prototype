@@ -3,7 +3,6 @@
 @import "tailwindcss/utilities";
 
 :root {
-    /* 1. Color Variables (Schemes and Surface) */
     --Schemes-Primary: #65558F;
     --Schemes-On-Primary: #FFF;
     --Schemes-Outline-Variant: #CAC4D0;

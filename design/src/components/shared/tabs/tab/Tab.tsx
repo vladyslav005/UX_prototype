@@ -32,7 +32,7 @@ export const Tab = ({label, defaultActive, onClick}: TabProps) => {
   return (
       <MyRipples during={1000} color={'rgba(29, 27, 32, 0.08)'}
                  className={'tab ' + (activeTabLabel === label ? 'active-tab' : '')} onClick={handleClick}>
-        <h1 className="title">{label}</h1>
+        <a href="#"><h1 className="title">{label}</h1></a>
       </MyRipples>
   )
 }

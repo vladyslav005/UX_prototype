@@ -113,17 +113,17 @@ export const Tree = () => {
             <Button onClick={toggleDropdown} className="download-btn">
               <img src={downloadIcon} alt=""/>
             </Button>
-            <div className={"dropdown " + (isDropdownOpen ? "" : "hidden")}>
+            <div aria-rowcount={2} className={"dropdown " + (isDropdownOpen ? "" : "hidden")}>
               <ul>
-                <li onClick={() => {
+                <li aria-rowindex={1} onClick={() => {
                   openPngModal();
                   toggleDropdown()
-                }}>Export as PNG
+                }}><a href="#">Export as PNG</a>
                 </li>
-                <li onClick={() => {
+                <li aria-rowindex={2} onClick={() => {
                   openTextModal();
                   toggleDropdown()
-                }}>Export as LaTex
+                }}><a href="#">Export as LaTex</a>
                 </li>
               </ul>
             </div>

@@ -6,7 +6,7 @@ interface CardTitleProps {
 
 export const CardTitle = ({title}: CardTitleProps) => {
   return (
-      <div className={"card-title"}>
+      <div aria-description={title} className={"card-title"}>
         <h1>{title}</h1>
       </div>
   )
