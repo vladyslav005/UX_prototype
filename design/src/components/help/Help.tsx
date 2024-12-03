@@ -1,15 +1,15 @@
-import {Search} from "../search/Search";
-import {ListItem} from "../lIstitem/ListItem";
+import {Search} from "../shared/search/Search";
+import {ListItem} from "../shared/lIstitem/ListItem";
 import './style.css'
 import {useState} from "react";
-import {Modal} from "../modal/Modal";
-import {Card} from "../card/Card";
-import {CardTitle} from "../card/CardTitle";
-import {CardSubtitle} from "../card/CardSubtitle";
+import {Modal} from "../shared/modal/Modal";
+import {Card} from "../shared/card/Card";
+import {CardTitle} from "../shared/card/CardTitle";
+import {CardSubtitle} from "../shared/card/CardSubtitle";
 // @ts-ignore
 import img from '../../assets/images/img.png'
-import {CardImage} from "../card/CardImage";
-import {CardContent} from "../card/CardContent";
+import {CardImage} from "../shared/card/CardImage";
+import {CardContent} from "../shared/card/CardContent";
 
 
 export const Help = () => {

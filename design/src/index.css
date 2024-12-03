@@ -61,14 +61,12 @@ html {
     padding: 0;
     margin: 0;
     background: var(--Schemes-Surface, #FEF7FF);
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
-
 
 
 section {
     height: 100%;
-    /*flex-grow: 0;*/
     border-radius: var(--Corner-Medium, 12px);
     background: var(--Schemes-Surface-Container, #F3EDF7);
 }
@@ -83,7 +81,7 @@ section {
 }
 
 *::-webkit-scrollbar-thumb {
-    background:  #AEAEB2;
+    background: #AEAEB2;
     border-radius: 20px; /* roundness of the scroll thumb */
 }
 

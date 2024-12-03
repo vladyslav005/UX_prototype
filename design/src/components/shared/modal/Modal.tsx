@@ -1,11 +1,10 @@
 import './style.css'
 
 // @ts-ignore
-import crossIcon from "../../assets/icons/cross.png";
+import crossIcon from "../../../assets/icons/cross.png";
 import {MyRipples} from "../tabs/tab/Tab";
 
 import {Transition, TransitionStatus} from "react-transition-group";
-import {isObject} from "node:util";
 
 interface ModalProps {
   children?: React.ReactNode;
@@ -18,7 +17,7 @@ export const Modal = (props: ModalProps) => {
 
   return (
       <Transition in={props.isOpen} timeout={300} unmountOnExit>
-        { (state : TransitionStatus) =>
+        {(state: TransitionStatus) =>
             (<div className={"modal-state-layer"} onClick={props.onClose}>
               <div className={"modal " + state + " " + props.className} onClick={(e) => {
                 e.stopPropagation();

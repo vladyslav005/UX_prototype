@@ -5,7 +5,7 @@ import editorBasicImg from '../../assets/images/editor_basic.png'
 // @ts-ignore
 import editorInteractiveImg from '../../assets/images/editor_interactive.png'
 
-import {Button} from "../button/Button";
+import {Button} from "../shared/button/Button";
 import {useContext} from "react";
 import {CommonContext} from "../../CommonContext";
 

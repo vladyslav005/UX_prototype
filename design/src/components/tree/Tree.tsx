@@ -1,6 +1,6 @@
-import {Tabs} from "../tabs/Tabs";
-import {Tab} from "../tabs/tab/Tab";
-import {TabContent} from "../tabs/tabcontent/TabContent";
+import {Tabs} from "../shared/tabs/Tabs";
+import {Tab} from "../shared/tabs/tab/Tab";
+import {TabContent} from "../shared/tabs/tabcontent/TabContent";
 import './style.css'
 
 // @ts-ignore
@@ -14,20 +14,20 @@ import copyIcon from '../../assets/icons/copy.png'
 
 import {MapInteractionCSS} from 'react-map-interaction';
 import React, {useContext, useEffect, useState} from "react";
-import {Button} from "../button/Button";
-import {Modal} from "../modal/Modal";
-import {Card} from "../card/Card";
-import {CardTitle} from "../card/CardTitle";
-import {CardSubtitle} from "../card/CardSubtitle";
-import {CardImage} from "../card/CardImage";
-import {CardContent} from "../card/CardContent";
+import {Button} from "../shared/button/Button";
+import {Modal} from "../shared/modal/Modal";
+import {Card} from "../shared/card/Card";
+import {CardTitle} from "../shared/card/CardTitle";
+import {CardSubtitle} from "../shared/card/CardSubtitle";
+import {CardImage} from "../shared/card/CardImage";
+import {CardContent} from "../shared/card/CardContent";
 // @ts-ignore
 import pngPreviewImg from '../../assets/images/png_preview.png'
 
 // @ts-ignore
 import texPreviewImg from '../../assets/images/latex_preview.png'
 import {CommonContext} from "../../CommonContext";
-import {ToolTip} from "../tooltip/ToolTip";
+import {ToolTip} from "../shared/tooltip/ToolTip";
 
 
 export const Tree = () => {

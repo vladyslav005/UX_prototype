@@ -3,13 +3,9 @@ import React, {useState} from "react";
 
 interface CommonContextType {
   interactiveEditor: boolean;
-
   setInteractiveEditor: (newInteractiveEditor: boolean) => void;
-
   isTreeBuilt: boolean;
-
   setIsTreeBuilt: (isTreeBuiltin: boolean) => void;
-
 }
 
 

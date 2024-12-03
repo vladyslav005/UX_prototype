@@ -1,7 +1,7 @@
 import './style.css'
 
 // @ts-ignore
-import img from '../../assets/images/list_item_img.png'
+import img from '../../../assets/images/list_item_img.png'
 
 interface ListItemProps {
   onClick?: () => void

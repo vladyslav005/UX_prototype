@@ -33,7 +33,7 @@
     position: absolute;
     height: 30px;
     width: 30px;
-    background-image: url("../../assets/icons/lense.png");
+    background-image: url("../../../assets/icons/lense.png");
     top: 0.7rem;
     right: 1rem;
     background-size: cover; /* Scales the image to cover the entire area */
