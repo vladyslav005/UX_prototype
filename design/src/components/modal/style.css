@@ -1,6 +1,10 @@
 .modal {
     position: absolute;
     max-width: 1000px;
+
+    transition: all .3s ease-in-out;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .modal-state-layer {
@@ -9,7 +13,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.34);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +30,7 @@
     overflow: hidden;
     cursor: pointer;
 
-    transition: background-color .2s ease-in-out;
+    transition: background-color .3s ease-in-out;
 }
 
 .close-button:hover {
@@ -36,4 +40,26 @@
 
 .close-button img {
 
+}
+
+.entering,
+.entered {
+    opacity: 1;
+}
+
+.entering,
+.entered {
+    transform: translateY(0);
+}
+
+
+
+.exiting,
+.exited {
+    opacity: 0;
+}
+
+.exiting,
+.exited {
+    transform: translateY(-50px);
 }

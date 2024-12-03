@@ -27,10 +27,15 @@ export const Help = () => {
 
   return (
       <section id="help" className="flex flex-col items-center overflow-hidden  w-full">
-        <div id="help-list" className="w-11/12 flex flex-col gap-5 my-4 overflow-x-auto">
+        <div className="flex flex-col items-center justify-center w-11/12">
           <Search></Search>
+        </div>
+        <div id="help-list" className="w-11/12 flex flex-col gap-5 my-4 overflow-x-auto">
           <ListItem onClick={handleListItemCLick}></ListItem>
           <ListItem onClick={handleListItemCLick}></ListItem>
+          <ListItem onClick={handleListItemCLick}></ListItem>
+          <ListItem onClick={handleListItemCLick}></ListItem>
+
         </div>
 
         <Modal isOpen={isModelOpened} onClose={handleCloseModal}>
