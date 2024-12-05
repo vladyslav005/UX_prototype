@@ -59,8 +59,7 @@ export const Tree = () => {
   const closeTextModal = () => {
     setShowTexModal(false);
   }
-
-
+  
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   }
@@ -94,7 +93,6 @@ export const Tree = () => {
             <Tab label="Tree with LaTex" onClick={() => {
               commonContext.setInteractiveEditor(false)
             }} defaultActive/>
-
 
             <TabContent label={"Interactive tree"} className={commonContext.isTreeBuilt ? "" : "hidden"}>
               <MapInteractionCSS>
@@ -191,7 +189,6 @@ export const Tree = () => {
             </div>
           </Card>
         </Modal>
-
 
         <ToolTip text={"File has been downloaded"}
                  className={"tree-tooltip " + (hideDownloadToolTip ? "hidden" : "")}
